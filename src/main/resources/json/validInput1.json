@@ -1,6 +1,11 @@
 {
   "name": "JohnDoe",
-  "age": 255,
-  "email": "john.doeexample.com",
+  "age": 25,
+  "email": "john.doe@example.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "Springfield",
+    "postalCode": "12345"
+  },
   "score": 85.5
 }

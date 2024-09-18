@@ -1,0 +1,11 @@
+{
+  "name": "John123",
+  "age": 177,
+  "email": "john.doe@example",
+  "address": {
+    "street": "123 Main St",
+    "city": "Springfield123",
+    "postalCode": "1234"
+  },
+  "score": 105
+}

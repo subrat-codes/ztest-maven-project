@@ -4,22 +4,39 @@
   "properties": {
     "name": {
       "type": "string",
-      "pattern": "^[A-Za-z ]+$"
+      "pattern": "^[A-Za-z]+$"
     },
     "age": {
       "type": "integer",
-      "minimum": 0,
-      "maximum": 120
-    },
-    "salary": {
-      "type": "number",
-      "minimum": 30000,
-      "maximum": 200000
+      "minimum": 18,
+      "maximum": 99
     },
     "email": {
       "type": "string",
-      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+      "format": "email"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string",
+          "pattern": "^[A-Za-z ]+$"
+        },
+        "postalCode": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$"
+        }
+      },
+      "required": ["street", "city", "postalCode"]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
     }
   },
-  "required": ["name", "age", "salary", "email"]
+  "required": ["name", "age", "email", "address", "score"]
 }

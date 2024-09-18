@@ -1,0 +1,15 @@
+In this example:
+
+The name property must be a string containing only letters.
+The age property must be an integer between 18 and 99.
+The email property must be a valid email address.
+The address property is an object with street, city, and postalCode properties. The city must contain only letters and spaces, and the postalCode must be a 5-digit number.
+The score property must be a number between 0 and 100.
+The valid JSON input meets all these criteria, while the invalid JSON input has several issues:
+
+name contains numbers.
+age is below the minimum value.
+email is not in a valid format.
+city contains numbers.
+postalCode is not a 5-digit number.
+score exceeds the maximum value.
